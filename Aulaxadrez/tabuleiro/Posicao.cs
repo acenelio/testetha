@@ -1,7 +1,4 @@
-﻿using System;
-using tabuleiro;
-
-namespace tabuleiro
+﻿namespace tabuleiro
 {
     class Posicao
     {
