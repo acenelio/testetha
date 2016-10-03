@@ -8,13 +8,15 @@ namespace tabuleiro {
 
     class Tabuleiro {
 
-        Posiçao p;
-        p = new Posiçao(1, 2);
+        private Peca[,] peca; 
+        public int linhas { get; set; } 
+        public int colunas { get; set; }
 
-        Console.WriteLine("Posiçao = " + p);
-
-            Console.ReadLine();
+        public Tabuleiro(int linhas, int colunas)
+        {
+            this.linhas = linhas;
+            this.colunas = colunas;
+            peca = new Peca[linhas, colunas];
         }
-
     }
 }

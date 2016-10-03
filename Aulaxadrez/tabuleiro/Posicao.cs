@@ -3,13 +3,13 @@ using tabuleiro;
 
 namespace tabuleiro
 {
-    class Posiçao
+    class Posicao
     {
        
         public int linha { get; set; }
         public int coluna { get; set; }
 
-        public Posiçao(int linha, int coluna)
+        public Posicao(int linha, int coluna)
         {
             this.linha = linha;
             this.coluna = coluna;
