@@ -13,15 +13,8 @@ namespace Aulaxadrez
                 Console.Write(8 - i + " ");
                 for ( int j=0; j<tab.colunas; j++)
                 {
-                    if (tab.peca(i, j) == null)
-                    {
-                        Console.Write("- ");
-                    }
-                    else
-                    {
-                        imprimirPeca(tab.peca(i, j));
+                  imprimirPeca(tab.peca(i, j));
                         Console.Write(" ");
-                    }
                 }
                 Console.WriteLine();
             }
@@ -38,20 +31,22 @@ namespace Aulaxadrez
 
         public static void imprimirPeca(Peca peca)
         {
-            if (peca.cor == Cor.branca)
-            {
-                Console.Write(peca);
+            if (peca == null) {
+                Console.Write("- ");
             }
-            
-            else
-            {
-                ConsoleColor aux = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write(peca);
-                Console.ForegroundColor = aux;
-            } 
-        }
-        
+            else {
+                if (peca.cor == Cor.branca) {
+                    Console.Write(peca);
+                }
 
+                else {
+                    ConsoleColor aux = Console.ForegroundColor;
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.Write(peca);
+                    Console.ForegroundColor = aux;
+                }
+                Console.Write(" ");
+            }
+        }   
     }
 }
