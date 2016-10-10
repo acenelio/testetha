@@ -20,6 +20,7 @@ namespace Aulaxadrez
                     else
                     {
                         imprimirPeca(tab.peca(i, j));
+                        Console.Write(" ");
                     }
                 }
                 Console.WriteLine();
