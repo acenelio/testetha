@@ -14,7 +14,6 @@ namespace Aulaxadrez
                 for ( int j=0; j<tab.colunas; j++)
                 {
                   imprimirPeca(tab.peca(i, j));
-                        Console.Write(" ");
                 }
                 Console.WriteLine();
             }
@@ -30,7 +29,7 @@ namespace Aulaxadrez
 
             for (int i = 0; i < tab.linhas; i++)
             {
-                Console.Write(8 - i + " ");
+                Console.Write(8 - i + " " );
                 for (int j = 0; j < tab.colunas; j++)
                 {
                     if (posicoesPossiveis[i, j] )
@@ -43,7 +42,8 @@ namespace Aulaxadrez
                     }
 
                     imprimirPeca(tab.peca(i, j));
-                    Console.Write(" ");
+                    Console.BackgroundColor = fundoOriginal;
+
                 }
                 Console.WriteLine();
             }

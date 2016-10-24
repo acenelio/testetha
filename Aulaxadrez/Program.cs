@@ -13,6 +13,7 @@ namespace Aulaxadrez
                 PartidaDeXadrez partida = new PartidaDeXadrez();
 
                 while (!partida.terminada) {
+
                     Console.Clear();
                     Tela.imprimirTabuleiro(partida.tab);
 
