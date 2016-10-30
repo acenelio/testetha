@@ -14,7 +14,13 @@ namespace Aulaxadrez
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
             Console.WriteLine("Arguardando jogada: " + partida.jogadorAtual);
+            if (partida.xeque) {
+                Console.WriteLine("XEQUE!");
+            }
+
+            Console.WriteLine();
         }
+
 
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida) {
             Console.WriteLine("Peças Capturadas: ");
